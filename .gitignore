@@ -1,8 +1,6 @@
 # Cache and logs (Symfony2)
 /app/cache/*
 /app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
 
 # Email spool folder
 /app/spool/*
@@ -11,13 +9,9 @@
 /var/cache/*
 /var/logs/*
 /var/sessions/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
-!var/sessions/.gitkeep
 
 # Logs (Symfony4)
 /var/log/*
-!var/log/.gitkeep
 
 # Parameters
 /app/config/parameters.yml
@@ -31,9 +25,19 @@
 !bin/symfony_requirements
 /vendor/
 
-# Assets and user uploads
-/web/bundles/
-/web/uploads/
+# symfony/framework-bundle
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/*
+/public/uploads/*
+
+# symfony/webpack-encore-bundle
+/node_modules/*
+/public/build/*
+npm-debug.log
+yarn-error.log
 
 # PHPUnit
 /app/phpunit.xml
@@ -50,3 +54,11 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# Sowapps Ansible
+/config/environment.json
+
+# But keep empty folder containing gitkeep & htaccess
+# After all other instructions
+!.gitkeep
+!.htaccess
