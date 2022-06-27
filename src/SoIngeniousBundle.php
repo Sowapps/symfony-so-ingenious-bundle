@@ -1,6 +1,6 @@
 <?php
 
-namespace Sowapps\SoIngeniousBundle;
+namespace Sowapps\SoIngenious;
 
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 

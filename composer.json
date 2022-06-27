@@ -1,5 +1,5 @@
 {
-	"name": "sowapps/so-ingenious-bundle",
+	"name": "sowapps/so-ingenious",
 	"type": "symfony-bundle",
 	"license": "MIT",
 	"minimum-stability": "stable",
@@ -14,18 +14,18 @@
 		"symfony/framework-bundle": "6.1.*",
 		"symfony/runtime": "6.1.*",
 		"symfony/yaml": "6.1.*",
-		"sowapps/so-core-bundle": "*"
+		"sowapps/so-core": "*"
 	},
 	"require-dev": {
 	},
 	"autoload": {
 		"psr-4": {
-			"Sowapps\\SoIngeniousBundle\\": "src/"
+			"Sowapps\\SoIngenious\\": "src/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Sowapps\\SoIngeniousBundle\\Tests\\": "tests/"
+			"Sowapps\\SoIngenious\\Tests\\": "tests/"
 		}
 	},
 	"extra": {
