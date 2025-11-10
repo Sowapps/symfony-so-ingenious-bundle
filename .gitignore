@@ -23,15 +23,16 @@
 /bin/*
 !bin/console
 !bin/symfony_requirements
-/vendor/
 
-# symfony/framework-bundle
+###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
-/public/bundles/*
-/public/uploads/*
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
 
 # symfony/webpack-encore-bundle
 /node_modules/*
@@ -46,8 +47,10 @@ yarn-error.log
 # Build data
 /build/
 
-# Composer PHAR
+# Composer
 /composer.phar
+# Excluded in bundle
+/composer.lock
 
 # Backup entities generated with doctrine:generate:entities command
 **/Entity/*~
